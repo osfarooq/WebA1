@@ -1,0 +1,137 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f8f8f8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+.profile-pic {
+  width: 100px; 
+  height: 100px;
+  border-radius: 50%;
+}
+
+h1,
+h2,
+h3 {
+  margin-left: 0;
+  padding: 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.contact-details {
+  margin-top: 10px; 
+}
+
+.contact-details p {
+  margin-bottom: 5px;
+  font-size: 14px; 
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #3c7dff;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #3c7dff;
+  margin-left: 20px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #3c7dff;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.education,
+.experience,
+.skills,
+.projects {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  color: #333;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  color: rgb(0, 80, 253);
+  background-color: #d4e8fb;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.projects p {
+  margin-bottom: 15px;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects li {
+  margin-bottom: 5px;
+}
+
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    size: A4;
+  }
+  .header,
+  .main {
+    padding: 20px;
+  }
+}

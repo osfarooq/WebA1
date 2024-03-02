@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+    <form id="jobApplicationForm">
+      <!-- Personal Information -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div>
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+        </div>
+        <div>
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+        <div>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="street">Street Address:</label>
+          <input type="text" id="street" name="street" required />
+        </div>
+        <div>
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
+        </div>
+        <div>
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required />
+        </div>
+        <div>
+          <label for="zip">ZIP Code:</label>
+          <input type="text" id="zip" name="zip" required />
+        </div>
+      </fieldset>
+      <!-- Resume and Cover Letter -->
+      <fieldset>
+        <legend>Resume and Cover Letter</legend>
+        <div>
+          <label for="resume">Upload Resume:</label>
+          <input
+            type="file"
+            id="resume"
+            name="resume"
+            accept=".pdf,.doc,.docx"
+            required
+          />
+        </div>
+        <div>
+          <label for="coverLetter">Cover Letter:</label>
+          <textarea
+            id="coverLetter"
+            name="coverLetter"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+      </fieldset>
+      <!-- Education -->
+      <fieldset>
+        <legend>Education</legend>
+        <div>
+          <label for="educationLevel"
+            >Highest Level of Education Attained:</label
+          >
+          <input
+            type="text"
+            id="educationLevel"
+            name="educationLevel"
+            required
+          />
+        </div>
+        <div>
+          <label for="university">School/University:</label>
+          <input type="text" id="university" name="university" required />
+        </div>
+        <div>
+          <label for="major">Major/Area of Study:</label>
+          <input type="text" id="major" name="major" required />
+        </div>
+        <div>
+          <label for="gradYear">Graduation Year:</label>
+          <input type="number" id="gradYear" name="gradYear" required />
+        </div>
+      </fieldset>
+      <!-- Employment History -->
+      <fieldset>
+        <legend>Employment History</legend>
+        <div id="jobTitles">
+          <div class="jobTitle">
+            <label for="jobTitle1">Previous Job Title:</label>
+            <input type="text" id="jobTitle1" name="jobTitle1" required />
+          </div>
+        </div>
+        <button type="button" id="addJobTitle">Add Another Job Title</button>
+      </fieldset>
+      <!-- Skills -->
+      <fieldset>
+        <legend>Skills</legend>
+        <div>
+          <label for="skills">Relevant Skills:</label>
+          <input type="text" id="skills" name="skills" required />
+        </div>
+        <div>
+          <label for="certifications">Certifications:</label>
+          <input
+            type="text"
+            id="certifications"
+            name="certifications"
+            required
+          />
+        </div>
+      </fieldset>
+      <!-- Availability -->
+      <fieldset>
+        <legend>Availability</legend>
+        <div>
+          <label for="startDate">Start Date:</label>
+          <input type="date" id="startDate" name="startDate" required />
+        </div>
+        <div>
+          <label for="workSchedule">Preferred Work Schedule:</label>
+          <input type="text" id="workSchedule" name="workSchedule" required />
+        </div>
+        <div>
+          <label for="relocate">Willingness to Relocate:</label>
+          <select id="relocate" name="relocate" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </fieldset>
+      <!-- References -->
+      <fieldset>
+        <legend>References</legend>
+        <div>
+          <label for="refName">Reference Name:</label>
+          <input type="text" id="refName" name="refName" required />
+        </div>
+        <div>
+          <label for="refContact">Reference Contact Information:</label>
+          <input type="text" id="refContact" name="refContact" required />
+        </div>
+        <div>
+          <label for="relationship">Relationship to Applicant:</label>
+          <input type="text" id="relationship" name="relationship" required />
+        </div>
+      </fieldset>
+      <!-- Additional Questions -->
+      <fieldset>
+        <legend>Additional Questions</legend>
+        <div>
+          <label for="whyWorkHere"
+            >Why do you want to work for this company?</label
+          >
+          <textarea
+            id="whyWorkHere"
+            name="whyWorkHere"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+      </fieldset>
+      <!-- Consent and Agreement -->
+      <fieldset>
+        <legend>Consent and Agreement</legend>
+        <div>
+          <input type="checkbox" id="agreement" name="agreement" required />
+          <label for="agreement">I agree to the terms and conditions</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="privacyPolicy"
+            name="privacyPolicy"
+            required
+          />
+          <label for="privacyPolicy">I acknowledge the Privacy Policy</label>
+        </div>
+      </fieldset>
+      <button type="submit">Submit Application</button>
+    </form>
+    <button id="viewApplications">View Applications as Table</button>
+    <table id="applicationsTable"></table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
